@@ -1,0 +1,14 @@
+{
+  "basePath": "./",
+  "trips": [
+    {
+      "slug": "aki",
+      "title": "Im Herbst Japans – Nihon no Aki",
+      "description": "Ein leiser Road‑&‑Rail‑Trip durch Tokyo, Kyoto und Osaka: rotgoldene Ahornalleen, Tempel im Abendlicht, Dampf über Ramen‑Schalen. Ein ruhiges Abenteuer zwischen Großstadtflimmern und Gartenstille.",
+      "thumb": "./assets/thumbs/aki.jpg",
+      "path": "./aki/",
+      "featured": true,
+      "status": "ready"
+    }
+  ]
+}

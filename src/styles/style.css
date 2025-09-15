@@ -1,0 +1,42 @@
+/* App styles extracted from index.html
+   Note: keep styles minimal; Bootstrap handles most layout. */
+/* Adventure theme color scheme */
+:root {
+  --accent: #c08b3e; /* warm adventure gold */
+  --accent-hover: #a8742e;
+  --bg: #f9f5e9; /* parchment */
+  --text: #3b2f2f; /* dark brown */
+  --muted: #a89f91; /* sand grey */
+  --border: #d6cfc4;
+}
+body { background: var(--bg); color: var(--text); }
+.navbar-brand span { color: var(--accent); }
+.btn-accent { background: var(--accent); color: #fff; border: none; }
+.btn-accent:hover { background: var(--accent-hover); }
+.link-accent { color: var(--accent); text-decoration: none; }
+.link-accent:hover { text-decoration: underline; }
+.card {
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background-color: #fffdf8;
+}
+.card-img-top { border-top-left-radius: 1rem; border-top-right-radius: 1rem; object-fit: cover; height: 160px; }
+/* Adventure hero background with overlay */
+.hero {
+  background: url('/assets/textures/hero-bg.jpg') center/cover no-repeat;
+  border-radius: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+/* Overlay for hero to ensure text contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(249, 245, 233, 0.65);
+}
+.hero > .row {
+  position: relative;
+  z-index: 1;
+}
+footer { color: var(--muted); }
